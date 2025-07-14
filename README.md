@@ -20,6 +20,11 @@ A comprehensive implementation and comparative analysis of three distinct AI age
   - Full test suite
   - Interactive Streamlit dashboard
   - CI/CD ready
+ 
+  <img width="1858" height="852" alt="proj 4" src="https://github.com/user-attachments/assets/625fff2e-cc47-414c-9b55-e59c2ee46625" />
+  <img width="1556" height="825" alt="Proj2" src="https://github.com/user-attachments/assets/77cd58f0-929f-480c-b731-3eafedd194f1" />
+
+
 
 ## 🎯 Why Multi-Agent Architecture with Judgeval?
 
