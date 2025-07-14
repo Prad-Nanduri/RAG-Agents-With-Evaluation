@@ -1,0 +1,41 @@
+# Core dependencies
+langchain>=0.1.0
+langchain-community>=0.0.10
+langchain-groq>=0.0.1
+langchain-google-genai>=0.0.5
+langchain-huggingface>=0.0.1
+langgraph>=0.0.20
+streamlit>=1.28.0
+judgeval>=0.0.54
+
+# Vector stores and embeddings
+chromadb>=0.4.0
+sentence-transformers>=2.2.0
+faiss-cpu>=1.7.4
+
+# Document processing
+PyPDF2>=3.0.0
+pdfplumber>=0.10.0
+PyMuPDF>=1.23.7
+
+pypdf>=3.17.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+
+# Utilities
+python-dotenv>=1.0.0
+tenacity>=8.2.0
+pydantic>=2.5.0
+nest-asyncio>=1.5.0
+
+# Evaluation and visualization
+pandas>=2.1.0
+matplotlib>=3.8.0
+seaborn>=0.13.0
+plotly>=5.18.0
+
+# Development tools
+pytest>=7.4.0
+black>=23.0.0
+ruff>=0.1.0
+pre-commit>=3.5.0

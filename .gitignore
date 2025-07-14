@@ -1,0 +1,79 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environments
+venv/
+env/
+ENV/
+evaluation/venv/
+agents/venv/
+tests/venv/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+*.env
+
+# Vector store data
+simple_rag_chroma_db/
+chroma_db/
+judgment_corrective_rag*egg-info/
+*.db
+*.sqlite
+
+# Models and embeddings (THIS IS LIKELY YOUR ISSUE)
+models/
+embeddings/
+sentence_transformers/
+.cache/
+*.bin
+*.pkl
+*.h5
+*.model
+*.safetensors
+
+# Logs
+*.log
+logs/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+*.cover
+
+# Temporary files
+*.tmp
+temp.txt
+temp/
+tmp/
+
+# Evaluation results
+evaluation/results/
+agent_evaluation_report.png
+evaluation_results.json
+simple_evaluation_results.json
+*.png
+*.jpg
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
