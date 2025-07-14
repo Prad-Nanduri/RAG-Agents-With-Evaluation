@@ -1,4 +1,3 @@
-```markdown
 # 🔬 Advanced Multi-Agent RAG Architecture with Judgment Labs Integration
 
 A comprehensive implementation and comparative analysis of three distinct AI agent architectures featuring advanced Retrieval-Augmented Generation (RAG) patterns with real-time tracing and evaluation through Judgment Labs' `judgeval` framework.
@@ -11,7 +10,7 @@ A comprehensive implementation and comparative analysis of three distinct AI age
   - **Pure Reasoning**: Chain-of-thought prompting without external data
 
 - **📊 Comprehensive Evaluation & Monitoring**:
-  - Real-time tracing at [app.judgmentlabs.ai]
+  - Real-time tracing at [app.judgmentlabs.ai](https://app.judgmentlabs.ai)
   - Multiple evaluation metrics (Faithfulness, Relevancy, Answer Correctness)
   - Performance benchmarking and comparative analysis
   - Token usage and latency tracking
@@ -21,7 +20,6 @@ A comprehensive implementation and comparative analysis of three distinct AI age
   - Full test suite
   - Interactive Streamlit dashboard
   - CI/CD ready
-
 
 ## 🎯 Why Multi-Agent Architecture with Judgeval?
 
@@ -176,9 +174,22 @@ make dashboard
 ### Docker Deployment
 
 ```bash
-# Build and run
+# Build the image
 docker build -t judgment-rag .
+
+# Run with environment variables
 docker run -p 8501:8501 --env-file .env judgment-rag
+
+# Or run with inline environment variables
+docker run -p 8501:8501 \
+  -e JUDGMENT_API_KEY=your_key \
+  -e JUDGMENT_ORG_ID=your_org \
+  -e GROQ_API_KEY=your_groq_key \
+  -e GOOGLE_API_KEY=your_google_key \
+  judgment-rag
+
+# To run a specific agent instead of the full pipeline
+docker run -p 8501:8501 --env-file .env judgment-rag streamlit run agents/corrective_rag_judgeval.py
 ```
 
 ## 📊 View Results
@@ -225,23 +236,14 @@ pytest tests/ -v --cov=agents --cov-report=html
 
 - **LLM Providers**: Groq (Llama 3.1/3.2), Google (Gemini 1.5)  {You can use your paid LLMs too - just tweak your code with LLMs}
 - **Vector Store**: ChromaDB with HuggingFace embeddings
-- **Evaluation**: Judgeval with GPT-4 as judge
+- **Evaluation**: Judgeval with GPT-4 as evaluator
 - **Framework**: LangChain, LangGraph
 - **UI**: Streamlit
 - **Deployment**: Docker
 
 ## 🤝 Contributing
 
-We welcome contributions! Please follow our development workflow:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Run tests (`make test`)
-4. Ensure code quality (`make lint`)
-5. Commit changes (`git commit -m 'Add amazing feature'`)
-6. Push to branch (`git push origin feature/amazing-feature`)
-7. Open a Pull Request
-
+I welcome contributions!
 For major changes, please open an issue first to discuss proposed changes.
 
 ## ✅ Successfully Implemented
